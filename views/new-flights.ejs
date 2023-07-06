@@ -1,0 +1,28 @@
+<!-- new-flight.ejs -->
+<h1>Create a New Flight</h1>
+
+<form action="/flights" method="POST">
+  <label for="airline">Airline:</label>
+  <select name="airline" id="airline">
+    <option value="American">American</option>
+    <option value="Southwest">Southwest</option>
+    <option value="United">United</option>
+  </select>
+
+  <label for="airport">Airport:</label>
+  <select name="airport" id="airport">
+    <option value="AUS">AUS</option>
+    <option value="DFW">DFW</option>
+    <option value="DEN">DEN</option>
+    <option value="LAX">LAX</option>
+    <option value="SAN">SAN</option>
+  </select>
+
+  <label for="flightNo">Flight Number:</label>
+  <input type="number" name="flightNo" id="flightNo" required min="10" max="9999">
+
+  <label for="departs">Departure Date/Time:</label>
+  <input type="datetime-local" name="departs" id="departs" value="<%= departsDate %>" required>
+
+  <button type="submit">Create Flight</button>
+</form>

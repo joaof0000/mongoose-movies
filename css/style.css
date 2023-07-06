@@ -1,0 +1,73 @@
+/* views/flights.ejs */
+h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  li h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  li p {
+    margin: 0;
+  }
+  
+  /* views/new-flight.ejs */
+  h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .destination-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .destination-item {
+    margin-bottom: 10px;
+  }

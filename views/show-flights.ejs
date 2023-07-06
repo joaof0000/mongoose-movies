@@ -1,0 +1,23 @@
+<!-- show-flight.ejs -->
+<h1>Flight Details</h1>
+
+<h3>Airline: <%= flight.airline %></h3>
+<p>Airport: <%= flight.airport %></p>
+<p>Flight No: <%= flight.flightNo %></p>
+<p>Departure Date/Time: <%= flight.departs.toISOString().slice(0, 16).replace('T', ' ') %></p>
+
+<hr>
+
+<h3>Destinations:</h3>
+<ul class="destination-list">
+  <% flight.destinations.forEach(destination => { %>
+    <li class="destination-item">
+      <p>Airport: <%= destination.airport %></p>
+      <p>Arrival Date/Time: <%= destination.arrival.toISOString().slice(0, 16).replace('T', ' ') %></p>
+    </li>
+  <% }) %>
+</ul>
+
+<hr>
+
+<a href="/flights" class="button">Back to Flights</a>

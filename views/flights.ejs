@@ -1,0 +1,15 @@
+<!-- flights.ejs -->
+<h1>All Flights</h1>
+
+<ul>
+  <% flights.forEach(flight => { %>
+    <% const flightDate = flight.departs.toISOString().slice(0, 16).replace('T', ' '); %>
+    <% const isExpired = flight.departs < currentDate; %>
+    <li <% if (isExpired) { %>style="color: red;"<% } %>>
+      <h3>Airline: <%= flight.airline %></h3>
+      <p>Airport: <%= flight.airport %></p>
+      <p>Flight No: <%= flight.flightNo %></p>
+      <p>Departure Date/Time: <%= flightDate %></p>
+    </li>
+  <% }) %>
+</ul>
