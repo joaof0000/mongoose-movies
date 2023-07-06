@@ -1,1 +1,2 @@
 # mongoose-movies
+# mongoose-flights
