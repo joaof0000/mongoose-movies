@@ -1,6 +1,3 @@
 # mongoose-movies
-# mongoose-flights
-# mongoose-flights
-# mongoose-flights
-# mongoose-flights2
-# mongoose-movies
+code in vs correct...github is routing incorrectly
+
